@@ -4,7 +4,7 @@ Simple script to convert an RGB image to an excel spreadsheet. Idea came from a 
 
 ### How does it work?
 
-If we zoom in on an actual pixel we can see the 3 channels RGB.
+If we zoom in on an actual pixel, we can see the 3 channels (RGB). These three channels of a pixel are ordered vertically.
 
 <img src="imgs/actualpixels.png" width=100 height=100>
 
