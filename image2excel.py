@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import xlsxwriter
 from PIL import Image
 import sys
