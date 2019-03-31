@@ -40,7 +40,7 @@ def main():
             for i,channel in enumerate(['r','g','b']):
                 hexcode = toHexa(colors[i], channel=channel)
                 wbformat = workbook.add_format({'bg_color':hexcode})
-                worksheet.write(y+i,x,hexcode, wbformat)
+                worksheet.write(y+i,x,'', wbformat)
 
     workbook.close()
 
