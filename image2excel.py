@@ -35,7 +35,7 @@ def main():
 
     # color excel cells
     for x in range(imsize[0]):
-        for y in range(0,imsize[1]*3, 3):
+        for y in range(0, imsize[1]*3, 3):
             colors = pix[x, y/3]
             for i,channel in enumerate(['r','g','b']):
                 hexcode = toHexa(colors[i], channel=channel)

@@ -20,7 +20,7 @@ After running the script it will create an `output.xls` file which will contain 
 
 #### School project
 
-This was an optional school project for the course *Introduction to Python* at my university.
+This was an optional project for the course *Introduction to Python* at my university.
 
 Course website: 
 [https://arato.inf.unideb.hu/szathmary.laszlo/pmwiki/index.php?n=Acad.Py2019febr](https://arato.inf.unideb.hu/szathmary.laszlo/pmwiki/index.php?n=Acad.Py2019febr)
