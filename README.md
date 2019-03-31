@@ -6,17 +6,17 @@ Simple script to convert an RGB image to an excel spreadsheet. Idea came from a 
 
 If we zoom in on an actual pixel we can see the 3 channels RGB.
 
-<img src="./imgs/actualpixels.png", width=100, height=100>
+<img src="imgs/actualpixels.png" width=100 height=100>
 
 This almost looks like an excel spreadsheet with alternating RGB rows doesn't it?
 
 So we just do the same in our excel file where a single pixel looks like this:
 
-<img src="./imgs/apixelinexcel.png", width=100>
+<img src="imgs/apixelinexcel.png" width=100>
 
 And we just create one of these for every pixel in our image.
 
-<img src="./imgs/pixinex.png", width=200>
+<img src="imgs/pixinex.png" width=200>
 
 
 #### Downsampling
