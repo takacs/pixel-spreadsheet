@@ -33,11 +33,11 @@ After running the script it will create an `output.xls` file which will contain 
 
 **Input image**
 
-![](./imgs/lena.png)
+<img src="imgs/lena.png" width=400>
 
 **Output spreadsheet**
 
-![](./imgs/lenaexcel.JPG)
+<img src="imgs/lenaexcel.JPG" width=400>
 
 #### School project
 
