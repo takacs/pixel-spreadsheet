@@ -23,11 +23,18 @@ def toHexa(val, channel):
 
 def main():
 
+    if len(sys.argv) < 2:
+        sys.exit('No input image!')
     # load image
     im = Image.open(sys.argv[1])
-    im.thumbnail((128,128), Image.ANTIALIAS) # downsampling, aspect ratio stays the same
-    pix = im.load()
     imsize = im.size
+    print(f'Input image size: ({imsize[0]}, {imsize[1]})')
+    if imsize[0] > 128 or imsize[1] > 128:
+        print('Downsampling image.')
+        im.thumbnail((128,128), Image.ANTIALIAS) # downsampling, aspect ratio stays the same
+        imsize = im.size
+        print(f'Image size after downsampling: ({imsize[0]}, {imsize[1]})')
+    pix = im.load()
     
     # create excel workbook/worksheet
     workbook = xlsxwriter.Workbook( './output.xls')
@@ -40,9 +47,10 @@ def main():
             for i,channel in enumerate(['r','g','b']):
                 hexcode = toHexa(colors[i], channel=channel)
                 wbformat = workbook.add_format({'bg_color':hexcode})
-                worksheet.write(y+i,x,'', wbformat)
+                worksheet.write(y+i,x,colors[i], wbformat)
 
     workbook.close()
+    print('Spreadsheet complete. Saved to ./output.xls')
 
 if __name__ == '__main__':
     main()
