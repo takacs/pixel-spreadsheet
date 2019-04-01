@@ -15,7 +15,7 @@ def toHexa(val, channel):
 
     if channel == 'r':  
         return '#' + '{:02x}'.format(val) + '0000'
-    elif channel == 'b':
+    elif channel == 'g':
         return '#00' + '{:02x}'.format(val) + '00'
     else:
         return '#0000' + '{:02x}'.format(val)
